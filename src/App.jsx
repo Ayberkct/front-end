@@ -14,7 +14,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className='dark:bg-black'>
       <Switch>
         <Route exact path='/main'>
           <Main darkMode={darkMode} setDarkMode={setDarkMode} />
