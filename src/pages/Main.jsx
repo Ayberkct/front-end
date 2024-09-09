@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import Headers from "../components/Headers";
 import Section from "../components/Section";
 import Skils from "../components/Skils";
@@ -7,17 +7,16 @@ import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 
 function Main(props) {
-  // eslint-disable-next-line react/prop-types
   const { darkMode, setDarkMode } = props;
   return (
-    <>
-      <Headers />
+    <div className='dark:bg-black'>
+      <Headers darkMode={darkMode} setDarkMode={setDarkMode} />
       <Section />
       <Skils />
       <Profile />
       <Projects />
       <Footer />
-    </>
+    </div>
   );
 }
 
