@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 function Headers(props) {
-  const { darkMode, setDarkMode, languageData, setLanguageData } = props;
+  const { darkMode, setDarkMode, systemLanguage, setSystemLanguage } = props;
   const handleThemeSwitch = () => {
     setDarkMode(!darkMode);
   };
   const handleLanguageSwitch = () => {
-    setLanguageData(languageData === "tr" ? "en" : "tr");
+    setSystemLanguage(systemLanguage === "tr" ? "en" : "tr");
   };
 
   return (
@@ -23,7 +23,7 @@ function Headers(props) {
       </div>
 
       <div onClick={handleLanguageSwitch} className='cursor'>
-        {languageData === "tr" ? "İngilizce'ye geç" : "Türkçe'ye geç"}
+        {systemLanguage === "tr" ? "İngilizce'ye geç" : "Türkçe'ye geç"}
       </div>
     </>
   );

@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 function Section(props) {
-  const { systemLanguage } = props;
-  const greeting = systemLanguage?.section?.greeting;
-  const intro = systemLanguage?.section?.intro;
-  const profilImg = systemLanguage?.section.profil_img;
-  const sectionInfo = systemLanguage?.section.sectionInfo;
+  const { currentData } = props;
+  const greeting = currentData.section.greeting;
+  const intro = currentData.section.intro;
+  const profilImg = currentData.section.profil_img;
+  const sectionInfo = currentData.section.sectionInfo;
   return (
     <div>
       <h2>{greeting}</h2>

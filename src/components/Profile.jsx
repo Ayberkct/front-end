@@ -1,19 +1,33 @@
-function Profile() {
+/* eslint-disable react/prop-types */
+function Profile(props) {
+  const { currentData } = props;
+  const profileTitle = currentData.profile.title;
+  const cardTitle = currentData.profile.cardTitle;
+  const date = currentData.profile.date;
+  const city = currentData.profile.city;
+  const educationStatus = currentData.profile.educationStatus;
+  const prefferredRol = currentData.profile.prefferredRol;
+  const aboutTitle = currentData.profile.aboutTitle;
+  const aboutContent = currentData.profile.aboutContent;
+
   return (
     <div>
-      <h2>PROFİLE</h2>
+      <h2>{profileTitle}</h2>
       <div>
-        <h3>Basic Information</h3>
-        <p>Doğum Tarihi</p>
+        <h3>{cardTitle}</h3>
+        <p>{date}</p>
         <span>24.12.1996</span>
-        <p>İkamet Şehri</p>
+        <p>{city}</p>
         <span>Sakarya</span>
-        <p>Eğitim Durumu</p>
+        <p>{educationStatus}</p>
         <span>Lisans</span>
-        <p>Tercih Ettiği Rol</p>
+        <p>{prefferredRol}</p>
         <span>Frontend, UI</span>
       </div>
-      <div></div>
+      <div>
+        <h2>{aboutTitle}</h2>
+        <p>{aboutContent}</p>
+      </div>
     </div>
   );
 }

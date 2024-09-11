@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
-import Main from "./pages/Main";
 import axios from "axios";
 import { languageDataDefault } from "./data";
 import Headers from "./components/Headers";
@@ -14,12 +12,11 @@ import Footer from "./components/Footer";
 function App() {
   const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
-  const [languageData, setLanguageData] = useState("tr");
   const [currentData, setCurrentData] = useState(); // tek bir dildeki internet sayfa içeriği
   const [systemLanguage, setSystemLanguage] = useState(() => {
     const userLang = navigator.language || navigator.userLanguage;
-    //userLang içinde tr varsa return tr else return en
-    return "tr";
+
+    return userLang.includes("tr") ? "tr" : "en";
   }); // kullanıcının o sıradaki dil tercihi
 
   useEffect(() => {
@@ -48,14 +45,14 @@ function App() {
       <Headers
         darkMode={darkMode}
         setDarkMode={setDarkMode}
-        languageData={languageData}
-        setLanguageData={setLanguageData}
+        systemLanguage={systemLanguage}
+        setSystemLanguage={setSystemLanguage}
       />
-      <Section systemLanguage={currentData} />
-      <Skils systemLanguage={currentData} />
-      <Profile systemLanguage={currentData} />
-      <Projects systemLanguage={currentData} />
-      <Footer systemLanguage={currentData} />
+      <Section currentData={currentData} />
+      <Skils currentData={currentData} />
+      <Profile currentData={currentData} />
+      <Projects currentData={currentData} />
+      <Footer currentData={currentData} />
     </div>
   );
 }
