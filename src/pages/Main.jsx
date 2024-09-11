@@ -7,15 +7,27 @@ import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 
 function Main(props) {
-  const { darkMode, setDarkMode } = props;
+  const {
+    darkMode,
+    setDarkMode,
+    languageData,
+    setLanguageData,
+    systemLanguage,
+  } = props;
+
   return (
     <div className='dark:bg-black'>
-      <Headers darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Section />
-      <Skils />
-      <Profile />
-      <Projects />
-      <Footer />
+      <Headers
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        languageData={languageData}
+        setLanguageData={setLanguageData}
+      />
+      <Section systemLanguage={systemLanguage} />
+      <Skils systemLanguage={systemLanguage} />
+      <Profile systemLanguage={systemLanguage} />
+      <Projects systemLanguage={systemLanguage} />
+      <Footer systemLanguage={systemLanguage} />
     </div>
   );
 }

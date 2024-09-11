@@ -1,4 +1,4 @@
-export const languageData = {
+export const languageDataDefault = {
   en: {
     header: {
       mode: "Dark Mode",

@@ -1,12 +1,13 @@
-function Section() {
+/* eslint-disable react/prop-types */
+function Section(props) {
+  const { systemLanguage } = props;
+  const greeting = systemLanguage?.section?.greeting;
+  const intro = systemLanguage?.section?.intro;
   return (
     <div>
-      <h2>Hi</h2>
+      <h2>{greeting}</h2>
       <div>
-        <p>
-          I’m Almila. I’m a full-stack developer. I can craft solid and scalable
-          frontend products. Let’s meet!
-        </p>
+        <p>{intro}</p>
         <img src='../public/foto.png' alt='' />
       </div>
       <i className='fa-brands fa-linkedin-in'></i>
