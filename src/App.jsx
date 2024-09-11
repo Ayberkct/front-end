@@ -12,12 +12,12 @@ import Footer from "./components/Footer";
 function App() {
   const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
-  const [currentData, setCurrentData] = useState(); // tek bir dildeki internet sayfa içeriği
+  const [currentData, setCurrentData] = useState();
   const [systemLanguage, setSystemLanguage] = useState(() => {
     const userLang = navigator.language || navigator.userLanguage;
 
     return userLang.includes("tr") ? "tr" : "en";
-  }); // kullanıcının o sıradaki dil tercihi
+  });
 
   useEffect(() => {
     if (darkMode === true) {
