@@ -1,4 +1,5 @@
 export const languageDataDefault = {
+  // adı değiştir trans
   en: {
     header: {
       mode: "Dark Mode",
