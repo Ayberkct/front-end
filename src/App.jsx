@@ -41,7 +41,7 @@ function App() {
     return "yükleniyor";
   }
   return (
-    <div className='dark:bg-black'>
+    <div className=' dark:bg-stone-800	'>
       <Headers
         darkMode={darkMode}
         setDarkMode={setDarkMode}
