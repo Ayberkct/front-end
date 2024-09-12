@@ -11,7 +11,7 @@ function Profile(props) {
   const aboutContent = currentData.profile.aboutContent;
 
   return (
-    <div className='bg-slate-500 p-12 min-h-fit flex flex-col items-center'>
+    <div className='bg-customGray p-12 min-h-fit flex flex-col items-center'>
       <h2 className='text-4xl mb-12'>{profileTitle}</h2>
       <div className='flex gap-8'>
         <div className='bg-white rounded-lg shadow-2xl w-[508px] h-[322px] p-6'>

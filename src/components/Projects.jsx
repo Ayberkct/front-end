@@ -16,33 +16,63 @@ function Projects(props) {
   const projectCard_2_img = currentData.projects.projectCard_2.img;
   return (
     <>
-      <h2>{projectsTitle}</h2>
-      <div>
-        <h3>{projectCard_1_title}</h3>
-        <p>{projectCard_1_explain}</p>
-        <p>react</p>
-        <p>vercel</p>
-        <p>axios</p>
-        <p>router</p>
-        <div className='flex'>
-          <p>{projectCard_1_navigation}</p>
-          <div>{projectCard_1_appNavi}</div>
+      <h2 className='text-4xl flex justify-center pt-8 pb-8'>
+        {projectsTitle}
+      </h2>
+      <div className='flex justify-center items-center gap-16'>
+        <div className=' relative max-w-sm border border-gray-200 rounded-lg shadow bg-customBlue dark:bg-gray-800 dark:border-gray-700 p-8 w-[500px] h-[668px] '>
+          <h3 className='text-3xl pb-4'>{projectCard_1_title}</h3>
+          <p>{projectCard_1_explain}</p>
+          <div className='flex gap-4 pt-4 pb-16'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              react
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              vercel
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              axios
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              router
+            </p>
+          </div>
+          <div className='flex justify-between mb-16'>
+            <p>{projectCard_1_navigation}</p>
+            <div>{projectCard_1_appNavi}</div>
+          </div>
+          <img
+            className=' absolute w-[500px] h-[287px] object-cover bottom-0 left-0'
+            src={projectCard_1_img}
+            alt=''
+          />
         </div>
-        <img src={projectCard_1_img} alt='' />
-      </div>
-      <div>
-        <h3>{projectCard_2_title}</h3>
-        <p>{projectCard_2_explain}</p>
-        <p>react</p>
-        <p>redux</p>
-        <p>axios</p>
-        <p>router</p>
-        <p>vercel</p>
-        <div className='flex'>
-          <p>{projectCard_2_navigation}</p>
-          <div>{projectCard_2_appNavi}</div>
+        <div className='relative max-w-sm border border-gray-200 rounded-lg shadow bg-customBlue dark:bg-gray-800 dark:border-gray-700 p-8 w-[500px] h-[668px]'>
+          <h3 className='text-3xl pb-4'>{projectCard_2_title}</h3>
+          <p>{projectCard_2_explain}</p>
+          <div className='flex gap-4 pt-4 pb-8 flex-wrap'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              react
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              vercel
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              axios
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              router
+            </p>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+              vercel
+            </p>
+          </div>
+          <div className='flex justify-between mb-16'>
+            <p>{projectCard_2_navigation}</p>
+            <div>{projectCard_2_appNavi}</div>
+          </div>
+          <img src={projectCard_2_img} alt='' />
         </div>
-        <img src={projectCard_2_img} alt='' />
       </div>
     </>
   );

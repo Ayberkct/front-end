@@ -10,7 +10,7 @@ function Headers(props) {
 
   return (
     <>
-      <header className='w-full h-1/8  dark:bg-stone-800 text-white  top-0 left-0 flex justify-end items-center p-4'>
+      <header className='w-full h-1/8  dark:bg-stone-800 text-white bg-customGray top-0 left-0 flex justify-end items-center p-4'>
         <div className='flex text-base text-zinc-500 justify-center items-center'>
           <label className='inline-flex items-center cursor-pointer'>
             <input
