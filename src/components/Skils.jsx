@@ -16,7 +16,7 @@ function Skils(props) {
   const skils6name = currentData.skils.figma.skilName;
   return (
     <div className='pb-0 mt-0 pt-0 mb-32  dark:text-white'>
-      <h2 className='text-5xl flex justify-center pb-0 mt-0 pt-0'>
+      <h2 className='text-5xl flex justify-center pb-0 mt-0 pt-0 pb-8'>
         {skilsTitle}
       </h2>
       <div className='flex gap-4 justify-center'>
