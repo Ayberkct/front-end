@@ -7,7 +7,7 @@ function Section(props) {
   const sectionInfo = currentData.section.sectionInfo;
 
   return (
-    <section className='bg-customGray '>
+    <section className='bg-customGray dark:bg-customDarkGray dark:text-white'>
       <div className='relative w-[1107px] h-[493px]  gap-0 opacity-100 mx-auto mt-0 mb-[151px] flex flex-col'>
         <div className='flex  w-full'>
           <div className='w-[666px] h-[256px]'>

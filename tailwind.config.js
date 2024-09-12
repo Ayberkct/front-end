@@ -11,6 +11,8 @@ export default {
         customGreen: "rgb(217, 246, 241)",
         customBlueText: "rgb(23, 104, 255)",
         customGreenText: "rgb(0, 118, 181)",
+        customGrayBg: "rgb(72, 65, 72)",
+        customDarkGray: "rgb(42, 38, 43)",
       },
     },
   },

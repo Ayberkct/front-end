@@ -15,8 +15,8 @@ function Projects(props) {
   const projectCard_2_appNavi = currentData.projects.projectCard_2.appNavi;
   const projectCard_2_img = currentData.projects.projectCard_2.img;
   return (
-    <>
-      <h2 className='text-4xl flex justify-center pt-8 pb-8'>
+    <div className=' dark:text-white'>
+      <h2 className='text-4xl flex justify-center pt-8 pb-8 '>
         {projectsTitle}
       </h2>
       <div className='flex justify-center items-center gap-16'>
@@ -24,16 +24,16 @@ function Projects(props) {
           <h3 className='text-3xl pb-4'>{projectCard_1_title}</h3>
           <p>{projectCard_1_explain}</p>
           <div className='flex gap-4 pt-4 pb-16'>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               react
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               vercel
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               axios
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               router
             </p>
           </div>
@@ -51,19 +51,19 @@ function Projects(props) {
           <h3 className='text-3xl pb-4'>{projectCard_2_title}</h3>
           <p>{projectCard_2_explain}</p>
           <div className='flex gap-4 pt-4 pb-8 flex-wrap'>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               react
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               vercel
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               axios
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               router
             </p>
-            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200'>
+            <p className='border w-fit bg-white pt-1 pr-4 pb-1 pl-4 flex justify-center items-center rounded-lg border-gray-200  dark:bg-gray-800 dark:border-gray-700'>
               vercel
             </p>
           </div>
@@ -74,7 +74,7 @@ function Projects(props) {
           <img src={projectCard_2_img} alt='' />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

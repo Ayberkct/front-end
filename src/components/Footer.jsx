@@ -8,7 +8,7 @@ function Footer(props) {
   const footerNav_4 = currentData.footer.footerNav_4;
 
   return (
-    <div className='flex justify-center items-center pt-16 pb-16 flex-wrap'>
+    <div className='flex justify-center items-center pt-16 pb-16 flex-wrap dark:text-white'>
       <div>
         <h3 className=' text-5xl w-[541px] h-[126px]'>{footerTitle}</h3>
       </div>
