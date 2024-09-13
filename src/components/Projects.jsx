@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
+import { useGlobalContext } from "../context/GlobalContext";
+
 /* eslint-disable react/prop-types */
 function Projects(props) {
-  const { currentData } = props;
+  const { currentData } = useGlobalContext();
   const projectsTitle = currentData.projects.projectTitle;
   const projectCard_1_title = currentData.projects.projectCard_1.title;
   const projectCard_1_explain = currentData.projects.projectCard_1.explain;

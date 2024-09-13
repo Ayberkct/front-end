@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
+import { useGlobalContext } from "../context/GlobalContext";
+
 /* eslint-disable react/prop-types */
 function Profile(props) {
-  const { currentData } = props;
+  const { currentData } = useGlobalContext();
   const profileTitle = currentData.profile.title;
   const cardTitle = currentData.profile.cardTitle;
   const date = currentData.profile.date;

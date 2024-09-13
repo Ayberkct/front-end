@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
+import { useGlobalContext } from "../context/GlobalContext";
+
 /* eslint-disable react/prop-types */
 function Skils(props) {
-  const { currentData } = props;
+  const { currentData } = useGlobalContext();
   const skilsTitle = currentData.skils.title;
   const skils1img = currentData.skils.js.skilImg;
   const skils1name = currentData.skils.js.skilName;

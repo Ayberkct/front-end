@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
+import { useGlobalContext } from "../context/GlobalContext";
+
 /* eslint-disable react/prop-types */
 function Section(props) {
-  const { currentData } = props;
+  const { currentData } = useGlobalContext();
   const greeting = currentData.section.greeting;
   const intro = currentData.section.intro;
   const profilImg = currentData.section.profil_img;

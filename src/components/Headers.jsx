@@ -1,12 +1,10 @@
+/* eslint-disable no-unused-vars */
+import { useGlobalContext } from "../context/GlobalContext";
+
 /* eslint-disable react/prop-types */
 function Headers(props) {
-  const { darkMode, setDarkMode, systemLanguage, setSystemLanguage } = props;
-  const handleThemeSwitch = () => {
-    setDarkMode(!darkMode);
-  };
-  const handleLanguageSwitch = () => {
-    setSystemLanguage(systemLanguage === "tr" ? "en" : "tr");
-  };
+  const { darkMode, handleThemeSwitch, handleLanguageSwitch, systemLanguage } =
+    useGlobalContext();
 
   return (
     <>

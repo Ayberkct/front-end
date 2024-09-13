@@ -80,10 +80,28 @@ export const languageDataDefault = {
     },
     footer: {
       footerTitle: "Let’s work together on your next product.",
-      footerNav_1: "Github",
-      footerNav_2: "Personel Blog",
-      footerNav_3: "Linkedin",
-      footerNav_4: "Email",
+      footerNav: [
+        {
+          name: "Github",
+          url: "https://github.com/Ayberkct",
+          colorClass: "#1768ff", // hex
+        },
+        {
+          name: "Personel Blog",
+          url: "....",
+          colorClass: "customBlue ", // hex
+        },
+        {
+          name: "Linkedin",
+          url: "https://www.linkedin.com/in/ayberk-%C3%A7etinkaya-16931a289/",
+          colorClass: "#1768ff ", // hex
+        },
+        {
+          name: "Email",
+          url: "....",
+          colorClass: "#ea2678 ", // hex
+        },
+      ],
     },
   },
   tr: {
@@ -166,10 +184,28 @@ export const languageDataDefault = {
     },
     footer: {
       footerTitle: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
-      footerNav_1: "Github",
-      footerNav_2: "Kişisel Blog",
-      footerNav_3: "Linkedin",
-      footerNav_4: "Email",
+      footerNav: [
+        {
+          name: "Github",
+          url: "https://github.com/Ayberkct",
+          colorClass: "#1768ff", // hex
+        },
+        {
+          name: "Personel Blog",
+          url: "....",
+          colorClass: "customBlue ", // hex
+        },
+        {
+          name: "Linkedin",
+          url: "https://www.linkedin.com/in/ayberk-%C3%A7etinkaya-16931a289/",
+          colorClass: "#1768ff ", // hex
+        },
+        {
+          name: "Email",
+          url: "....",
+          colorClass: "#ea2678 ", // hex
+        },
+      ],
     },
   },
 };
